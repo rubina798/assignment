@@ -1,0 +1,89 @@
+       assignment 2
+
+
+1. 
+     var obj1={
+     message:"object2",
+     name:"rubina",
+     age:"15"
+};
+var obj2={
+	object:"object2",
+	name:"beenu",
+	age:"21"
+};
+console.log(_.isEqual(obj1,obj2));
+
+
+2.
+	class rect{
+	constructor(name,h,w)
+	{
+		this.name=name;
+		this.height=h;
+		this.width=w;
+	}
+	getName()
+	{
+		console.log("this is",this.name);
+	}
+		}
+	class square extends rect
+	{
+		constructor(s)
+	{
+	super("square",s,s)
+	}	
+
+	getName(){
+		console.log("this is",this.name);
+	}
+	getarea(){
+		return this.width"this.height;
+	}	
+		}
+	const s=new square(4);
+	s.getName();
+	console.log("area is",s.area);
+
+3.
+	var arr1=[1,2,3,4,5,6];
+	var[a,b]=arr1;
+	console.log(a);
+	console.log(b);
+
+4.
+	const name=`rubina';
+	console.log(`my name is${name}`);
+	console.log(`this is first line 
+	this is second line`);
+
+5.
+	const arr1=[1,2,3,4];
+	const arr2=[5,6,7,8];
+	constonearr=[..arr1,..arr2];
+	console.log(onearr);
+	
+6.
+	varr1=require('readline-sync');
+	var email=r1.question("enter the email");
+	var reg=/\s;
+
+	if(!reg.test(email))
+	{
+	    var r=/[^.@].@{1}\w{2,20}.(in$|org$|com$){1})/;
+	    if(r.test(email))
+		{
+	    console.log("true");
+		}
+		else{
+		console.log("false");
+	}
+		}
+	else{
+		console.log("false");
+	}
+
+
+
+	
